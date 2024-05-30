@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="../CSS/styletable.css">
+<link rel="icon" type="img/png" href="../IMG/Logo.png">
+<title>Fortuna Real</title>
+</head>
+<body>
+<h2>Tabla de Punatajes</h2>
+<table id="tablaPosiciones">
+  <tr>
+    <th>Id Usuario</th>
+    <th>Usuario</th>
+    <th>Puntaje</th>
+  </tr>
+</table>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  fetch('datos.php')
+    .then(response => response.json())
+    .then(data => {
+      const tabla = document.getElementById('tablaPosiciones');
+      data.forEach(fila => {
+        const tr = document.createElement('tr');
+        const tdidUsuario = document.createElement('td');
+        tdidUsuario.textContent = fila.idRegistro;
+        const tdUsuario = document.createElement('td');
+        tdUsuario.textContent = fila.usuario;
+        const tdPuntaje = document.createElement('td');
+        tdPuntaje.textContent = fila.puntaje;
+        tr.appendChild(tdidUsuario);
+        tr.appendChild(tdUsuario);
+        tr.appendChild(tdPuntaje);
+        tabla.appendChild(tr);
+      });
+    })
+    .catch(error => console.error('Error:', error));
+});
+</script>
+</body>
+</html>
+

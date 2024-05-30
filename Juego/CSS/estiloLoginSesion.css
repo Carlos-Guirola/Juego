@@ -1,0 +1,258 @@
+@import url("https://fonts.googleapis.com/css2?family=Skranji:wght@400;700&family=Truculenta:opsz,wght@12..72,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  color: black;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.ip, .ipi {
+  position: absolute;
+  margin-top: -50px;
+  width: 100%;
+}
+
+.ip {
+  height: 120%;
+}
+
+.ipi {
+  height: 115%;
+}
+.filtro-negro, .filtro {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: black;
+  opacity: 0.5;
+}
+
+.filtro {
+  width: 100%;
+  height: 102%;
+}
+
+.filtro-negro {
+  width: 90%;
+  height: 110%;
+}
+
+.PaginaRegistrarse,.PaginaRegistrarse2 {
+  position: absolute;
+  width: 90%;
+  max-width: 520px;
+  height: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 30px;
+  box-sizing: border-box;
+}
+.PaginaRegistrarse2{
+  margin-top: 2%;
+}
+.icono {
+  width: 60px;
+  height: 60px;
+}
+
+.Logo {
+  text-align: center;
+}
+
+.FormularioDeRegistro {
+  background-color: rgb(246, 240, 240);
+  border-radius: 10px;
+  padding: 15px;
+  font-size: 25px;
+}
+
+h2 {
+  text-align: center;
+  font-size: 30px;
+}
+
+.DatosFormulario {
+  margin-bottom: 15px;
+  margin-right: 5px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 15px;
+}
+.CampoIntroducirDatos {
+  width: 90%;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #ffffff;
+  font-size: 15px;
+}
+.BotonDeRegistro {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  background: linear-gradient(to right, yellow, red);
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.BotonDeRegistro:hover {
+  background: linear-gradient(to right, red, yellow);
+}
+p {
+  text-align: center;
+  font-size: 15px;
+}
+
+a {
+  color: blue;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.modal-content p {
+  margin-bottom: 20px;
+}
+.terminos2{
+  font-size: 15px;
+  text-align: center;
+  padding: 10px;
+}
+.terminost{
+  text-align: center;
+  font-size: 20px;
+}
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.terminos-container {
+  display: flex;
+  align-items: center;
+}
+
+.terminos {
+  margin-left: 5px;
+}
+@media only screen and (max-width: 768px) {
+  .PaginaRegistrarse {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .icono {
+    width: 70px;
+    height: 70px;
+  }
+
+  .CampoIntroducirDatos {
+    font-size: 14px;
+  }
+
+  .BotonDeRegistro {
+    font-size: 14px;
+    padding: 8px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .PaginaRegistrarse {
+    width: 95%;
+    padding: 15px;
+  }
+
+  .icono {
+    width: 50px;
+    height: 50px;
+  }
+
+  .CampoIntroducirDatos {
+    font-size: 13px;
+  }
+
+  .BotonDeRegistro {
+    font-size: 13px;
+    padding: 7px;
+  }
+}
+
+@media only screen and (max-width: 375px){
+  .PaginaRegistrarse2,.PaginaRegistrarse{
+    width: 105%;
+    margin-left: 30px;
+    margin-top: 100px;
+    padding: 10px;
+  }
+
+  .ipi, .ip {
+    height: 150%;
+    width: 120%;
+  }
+
+  .filtro, .filtro-negro {
+    width: 120%;
+    height: 140%;
+  }
+
+  .icono {
+    width: 40px;
+    height: 40px;
+    margin: 20px;
+  }
+
+  h2 {
+    font-size: 20px;
+    margin-top: -13px;
+  }
+
+  .CampoIntroducirDatos {
+    width: 90%;
+    font-size: 12px;
+  }
+
+  .BotonDeRegistro {
+    font-size: 12px;
+    padding: 6px;
+  }
+  
+}
+
