@@ -212,4 +212,118 @@ footer{
 
 }
 
+@media screen and (min-width: 300px) and (max-width: 375px) {
+  .hear {
+    width: 160%;
+    height: 100px;
+    top: 0px;
+  }
+  h1{
+    font-size: 0;
+    }
+    .coins,.usuario,.salir,.tabla{
+   height: 10px;
+   font-size: 15px;
+   width: 110px;
+    }
+  .salir,.tabla{
+   width: 130px;
+   height: 40px;
+   font-size: 15px;
+   left: 420px;
+    }
+    .tabla{
+      width: 50px;
+      height: 10px;
+      left: 330px;
+    }
+  
+  .tragamonedas {
+    margin-top: 50%;
+    left: 0%;
+   
+  }
+  #botonJugar{
+    width: 100px;
+    font-size: 15px;
+    margin-bottom: 40px;
+   
+   }
+  .win,.canspin{
+   margin-left: 10px;
+   width: 50px;
+   font-size: 15px;
+  }
+  .win{
+    margin-left: 25%;
+    width: 80px;
+    font-size: 15px;
+  }
+ 
+  footer{
+    margin-top: 400px;
+    width: 160%;
+  }
+  #tx{
+    font-size: 12px;
+  }
+}
+@media screen and (min-width: 400px) and (max-width: 800px) {
+  .hear {
+    width: 150%;
+    height: 100px;
+    top: 0px;
+  }
+  h1{
+    font-size: 30px;
+    left: -90px;
+    }
+    .coins,.usuario,.salir,.tabla{
+   height: 10px;
+   font-size: 15px;
+   width: 150px;
+    }
+  .salir,.tabla{
+   width: 130px;
+   height: 40px;
+   font-size: 15px;
+   left: 800px;
+    }
+    .tabla{
+      width: 50px;
+      height: 10px;
+      left: 670px;
+    }
+  
+  .tragamonedas {
+    margin-top: 5%;
+    left: 30%;
+   
+  }
+  #botonJugar{
+    width: 100px;
+    font-size: 25px;
+   
+   }
+  .win,.canspin{
+   margin-left: 60px;
+   width: 100px;
+   font-size: 20px;
+  }
+  .win{
+    margin-left: 30%;
+    width: 150px;
+    font-size: 15px;
+  }
+ 
+  footer{
+    margin-top: 50px;
+    width: 150%;
+    height: 70px;
+  }
+  #tx{
+    font-size: 20px;
+  }
+}
+
 
